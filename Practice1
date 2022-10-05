@@ -1,0 +1,6 @@
+ Locators:-  how to write the locators 
+ [class="classvalue"]  
+ // Using  . dot we can write the classes   
+".classvalue "
+tagname[attribute="attributevalue"] 
+// Using # tag also.  
