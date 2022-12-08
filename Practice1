@@ -31,5 +31,30 @@ describe("Understand the HTMl Tables", function () {
                     
            })
   
+  
+ Cypress Hooks:  
+ before() 
+ after()
+ beforeEach() 
+ afterEach() 
+ 
+ describe("Represents the test suite", function () { 
+        before(function ( ) { 
+           //Run before it  block of the test.  
+           }); 
+        beforeEach(function( ) { 
+           //Runs before every it block of the test 
+           }) 
+        after(function(){
+           //Runs after it block of the test.  
+           }); 
+           
+        afterEach(function( ) { 
+           //Runs after evrey it block of the test
+           });
+     
+      it("Write the script", function( ) { 
+          
+         }
       
      
