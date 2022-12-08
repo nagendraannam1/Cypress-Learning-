@@ -4,3 +4,32 @@
 ".classvalue "
 tagname[attribute="attributevalue"] 
 // Using # tag also.  
+
+
+Cypress understanding the HTML Tables .  
+
+//Check Value any where in the table 
+//Check value in specific row and column  
+//Check the value based on condition through iterating the array  
+describe("Understand the HTMl Tables", function () { 
+   it("Writing the Script Validating the table formats data", function () {
+      cy.visit("https://testautomationpractice.blogspot.com"); 
+      cy.get('table[name="BookTable"]').contains("td").should("be.visible"); 
+      cy.get('table[name="BookTable"]>tbody>tr:nth-child(3)>td:nth-child(4)').should('have.value',100);
+      cy.get('table[name="BookTable"]>tbody>tr:nth-child(3)>td:nth-child(3)').contains('Java').should('be.visible'); 
+      //Above format type Validating the specefic row and column of the data.  
+      
+     cy.get('table[name="BookTable"]>tbody>tr td:nth-child(2)').each(($el,index,value)=>{
+           const texting=el.text( ); 
+           if(texting.includes("Amith") { 
+              cy.get('table[name="BookTable"]>tbody>tr td:nth-child(7)').eql(index).then(function(bname) { 
+                    const bookname=bname.text( ); 
+                    expect(bookname).to.equal("Master In Js"); 
+                    }
+                    });
+                    }
+                    
+           })
+  
+      
+     
