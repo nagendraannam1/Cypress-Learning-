@@ -1,0 +1,67 @@
+Utility Commands:   
+--> cy.fixtures ( );  
+--> .then(call back function);  // yeilded the subjects
+--> .each(call back function);  // yeilded the subjcets 
+--> cy.pause( );               // To stop the execution 
+--> cy.log( );                 // To print the info in logs
+--> cy.screenshots( );         // Taking the screen mentioned in specified line 
+--> cy.debug( );  
+
+Should and Command chainers:   
+
+--> have.length ();  
+--> be.visible ();  
+--> have.value( ); 
+--> have.text( );  
+--> not.be.visible( ); 
+--> be.enabled( ); 
+--> not.to.be.enabled( ); 
+--> have.css( );  //check the css style  
+--> have.class( );  //check the class 
+--> be.check( );  // checking the radio buttons and check boxes. 
+-->not.to.be.checked();  
+
+Selection Commands:
+
+-->cy.get( );  
+-->cy.contains( ) // Check the specified text strings. 
+--> select( ); 
+-->selectFile( );  
+-->first( ); 
+-->last( ); 
+-->next( ); 
+-->nextall( ); 
+-->nextuntil( ); 
+-->prev( ); 
+-->prevall( ); 
+-->prevuntil( );  
+-->.siblings( ); 
+-->.parent( ); 
+-->.children( );  
+-->.find( );
+
+Action Commands:  
+
+--> check( ); 
+--> uncheck( ); 
+--> rightclick( ); 
+--> dbclick( ); 
+-->leftclick( );  
+-->trigger( ); 
+--> hover( );  
+--> focus( );  
+--> submit( );  
+-->clear( ); 
+-->type( );  
+-->blur ();  
+
+Browser Commands:   
+
+cy.viewport( );         //change the Window size.  
+cy.scrollintoView( );   //scroll element to view.  
+cy.scrollTo( );         // scroll the 
+cy.title( );            // Check the title document/application title.  
+cy.go('back');          // back to the webpage  
+cy.go('forward');       //forward to webpage 
+cy.visit('url');        // visiting the url 
+
